@@ -33,7 +33,7 @@ public class Main {
         BufferedWriter writer;
         try {
             FileOutputStream fos = new FileOutputStream(output);
-            fos.write(new byte[]{(byte)0xef, (byte)0xbb, (byte)0xbf});
+            fos.write(new byte[]{(byte) 0xef, (byte) 0xbb, (byte) 0xbf});
             writer = new BufferedWriter(new OutputStreamWriter(fos, StandardCharsets.UTF_8));
             writer.write("主類別,子類別,二級類別,同異類別,臺灣語詞,大陸語詞");
             writer.newLine();
