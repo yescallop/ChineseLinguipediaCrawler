@@ -15,7 +15,7 @@ public class Main {
     private static final OkHttpClient HTTP_CLIENT = new OkHttpClient();
 
     private static final Pattern p = Pattern.compile("<td align='center';>(.*?)</td>\\r\\n(.*?)\\r\\n(.*)");
-    private static final Pattern p2 = Pattern.compile("1\">(.*?)</a");
+    private static final Pattern p2 = Pattern.compile("1\">([\\s\\S]*?)</a");
 
     public static void main(String[] args) {
         Structure structure = new Gson()
